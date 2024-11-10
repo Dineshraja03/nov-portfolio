@@ -1127,3 +1127,51 @@ textarea {
         gap: 1rem;
     }
 }
+
+Add specific styling for GeeksForGeeks social link
+.social-links a:nth-child(3) {
+    color: #2d2d2d;  /* Default color */
+    transition: color 0.3s ease;
+}
+
+/* If you want to make the icon green by default */
+.social-links a:nth-child(3) i:hover {
+    color: #000000;  /* Optional: makes the icon always green */
+}
+
+
+/* If you want a subtle green background on hover */
+.social-links a:nth-child(3):hover {
+    color: #308D46;
+}
+
+/* Update the CTA buttons container */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;  /* Space between buttons */
+    margin: 2rem 0;
+    flex-direction: row;  /* Ensure horizontal layout */
+    flex-wrap: nowrap;  /* Prevent wrapping */
+    align-items: center;
+}
+
+.btn {
+    white-space: nowrap;  /* Prevent text wrapping inside buttons */
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;  /* Stack buttons on mobile */
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;  /* Full width buttons on mobile */
+        text-align: center;
+    }
+}
