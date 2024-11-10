@@ -166,4 +166,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Clean up on page unload
     window.addEventListener('unload', cleanup);
+
+    // Projects Animation - Choose one of these options:
+
+    // Option 1: Project Management/Tasks
+        // lottie.loadAnimation({
+        //     container: document.getElementById('projects-animation'),
+        //     renderer: 'svg',
+        //     loop: true,
+        //     autoplay: true,
+        //     path: 'https://assets8.lottiefiles.com/packages/lf20_M9p23l.json'
+        // });
+
+    // Option 2: Code Window Animation
+    lottie.loadAnimation({
+        container: document.getElementById('projects-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets2.lottiefiles.com/private_files/lf30_wqypnpu5.json'
+    });
+
+    // // Option 3: Project Development
+    // lottie.loadAnimation({
+    //     container: document.getElementById('projects-animation'),
+    //     renderer: 'svg',
+    //     loop: true,
+    //     autoplay: true,
+    //     path: 'https://assets5.lottiefiles.com/packages/lf20_pwohahvd.json'
+    // });
+
+    // Option 4: Web Development
+    // lottie.loadAnimation({
+    //     container: document.getElementById('projects-animation'),
+    //     renderer: 'svg',
+    //     loop: true,
+    //     autoplay: true,
+    //     path: 'https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json'
+    // });
 });

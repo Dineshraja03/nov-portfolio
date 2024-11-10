@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -31,7 +32,10 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Dinesh Raja</span></h1>
+                    <h1>
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Dinesh Raja</span>
+                    </h1>
                     
                     <p class="hero-description">
                         A Frontend Developer with a passion for creating elegant digital solutions 
@@ -57,15 +61,10 @@
                 </div>
                 
                 <div class="hero-decoration">
+                    <div id="hero-animation"></div>
                     <div class="shape-blob"></div>
-                    <!-- <lottie-player 
-                        src="https://lottie.host/embed/animation.json" 
-                        background="transparent" 
-                        speed="1" 
-                        style="width: 300px; height: 300px;" 
-                        loop 
-                        autoplay>
-                    </lottie-player> -->
+                    <div class="shape-blob shape-blob-2"></div>
+                    <div class="shape-blob shape-blob-3"></div>
                 </div>
             </div>
         </div>
@@ -85,10 +84,17 @@
                             <i class="fas fa-graduation-cap"></i>
                             <span class="stat-label">Fresher</span>
                         </div>
+                        
                         <div class="stat-item">
                             <span class="stat-number">80+</span>
-                            <span class="stat-label">GFG Problems Solved</span>
+                            <span class="stat-label">Problems Solved</span>
                         </div>
+                        <div class="stat-item freelancer">
+                            <i class="fas fa-briefcase"></i>
+                            <span class="stat-number">   </span>
+                            <span class="stat-label">Freelancer</span>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="about-right">
@@ -124,29 +130,48 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <div class="skills-header">
+                <h2 class="section-title">My Skills</h2>
+                <div id="skills-animation"></div>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Development</h3>
                     <div class="skill-tags">
-                        <span>JavaScript</span>
+                        <span>Java</span>
                         <span>HTML5</span>
                         <span>CSS3</span>
-                        <span>MongoDB</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>MySQL</span>
                         <span>Git</span>
-                        <span>Java</span>
+                        
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Design Tools</h3>
+                    <h3>Design & Tools</h3>
                     <div class="skill-tags">
+                        <span>UI/UX Design</span>
+                        <span>Graphic Design</span>
                         <span>Figma</span>
+                        <span>Framer</span>
+                        <span>Canva</span>
+                        
                         <span>Adobe Photoshop</span>
-                        <span>Affinity Designer</span>
+                        <!-- <span>Affinity Designer</span> -->
                         <span>Adobe Illustrator</span>
                         <span>Adobe Lightroom</span>
-                        <span>Adobe Express</span>
-                        <span>Canva</span>
+                        <!-- <span>Adobe Express</span> -->
+                        
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Others</h3>
+                    <div class="skill-tags">
+                        
+                        <span>Ethical Hacking</span>
+                        <span>Technical Support</span>
+                        <span>Video & Photo Editing</span>
                     </div>
                 </div>
             </div>
@@ -156,7 +181,10 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <div class="projects-header">
+                <h2 class="section-title">My Projects</h2>
+                <div id="projects-animation"></div>
+            </div>
             <div class="project-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -168,7 +196,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Food Fire App Landing Page</h3>
+                        <h3> Landing Page</h3>
                         <p>Tools Used: Figma, Photoshop</p>
                     </div>
                 </div>
@@ -183,7 +211,7 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Counter App Edu Stack</h3>
+                        <h3> Edu Stack</h3>
                         <p>Tools Used: Figma, Photoshop</p>
                     </div>
                 </div>
@@ -224,7 +252,10 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div id="contact-animation"></div>
+            </div>
             <p class="contact-desc">Discuss a Project or just want to say Hi? My inbox is open for all.</p>
             
             <div class="contact-content">
@@ -238,7 +269,7 @@
                         <span>mdineshraja03@gmail.com</span>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/dinesh-raja-m-2704b3245/" target="_blank" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/mdineshraja03/" target="_blank" title="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
@@ -274,16 +305,55 @@
         });
     </script>
     <div class="scroll-progress"></div>
-    <!-- <div class="cursor-dot"></div> -->
-<div class="cursor-outline"></div>
-<!-- <div class="cursor-dot"></div> -->
-<!-- <div class="cursor-outline"></div> -->
-<div class="cursor-magnify"></div>
 
-<div class="cursor-dot"></div>
-<div class="magnifier">
-    <div class="magnifier-content"></div>
-</div>
+
+<script>
+    // Hero Animation
+    lottie.loadAnimation({
+        container: document.getElementById('hero-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets8.lottiefiles.com/packages/lf20_M9p23l.json' // Developer animation
+    });
+
+    // Skills Animation
+    lottie.loadAnimation({
+        container: document.getElementById('skills-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets9.lottiefiles.com/packages/lf20_3rwasyjy.json' // Tech stack animation
+    });
+
+    // Contact Animation
+    lottie.loadAnimation({
+        container: document.getElementById('contact-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets8.lottiefiles.com/packages/lf20_u25cckyh.json' // Contact animation
+    });
+
+    // Intersection Observer for animations
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observe animation containers
+    document.querySelectorAll('#hero-animation, #skills-animation, #contact-animation')
+        .forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            animationObserver.observe(element);
+        });
+</script>
 
 </body>
 </html>
