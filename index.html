@@ -325,10 +325,10 @@
                         </a>
                     </div>
                 </div>
-                <form id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                <form id="contact-form" onsubmit="sendWhatsAppMessage(event)">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn primary">Send Message</button>
                 </form>
             </div>

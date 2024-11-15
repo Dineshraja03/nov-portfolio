@@ -204,4 +204,25 @@ document.addEventListener('DOMContentLoaded', () => {
     //     autoplay: true,
     //     path: 'https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json'
     // });
+
+    function sendWhatsAppMessage(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Format the message
+        const formattedMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+        
+        // Replace YOUR_PHONE_NUMBER with your actual phone number including country code
+        // Example: 919876543210 for +91 9876543210
+        const phoneNumber = '919150256608';
+        
+        // Create WhatsApp URL
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
+        
+        // Open WhatsApp
+        window.open(whatsappURL, '_blank');
+    }
 });
