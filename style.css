@@ -214,7 +214,11 @@ h1 {
     }
 
     .hero-decoration {
-        display: none;
+        display: none !important;
+    }
+    
+    #hero-animation {
+        display: none !important;
     }
 }
 
@@ -1161,6 +1165,10 @@ Add specific styling for GeeksForGeeks social link
     border-radius: 8px;
     font-weight: 500;
     transition: all 0.3s ease;
+    text-align: center;  /* Ensure text is always centered */
+    display: inline-flex;  /* Use flexbox for better centering */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
 }
 
 /* Responsive adjustments */
@@ -1171,7 +1179,61 @@ Add specific styling for GeeksForGeeks social link
     }
     
     .btn {
-        width: 100%;  /* Full width buttons on mobile */
+        width: 60%;  /* Reduce button width on mobile */
         text-align: center;
+        margin: 0 auto;  /* Center the buttons */
+        display: flex;  /* Ensure flexbox on mobile */
+        justify-content: center;  /* Center content horizontally */
+        align-items: center;  /* Center content vertically */
+    }
+}
+
+
+
+/* Add specific styling for Projects stat item */
+.about .stat-item:nth-child(4) i {
+    color: #6366f1;  /* Indigo color for icon */
+}
+
+.about .stat-item:nth-child(4):hover {
+    background: #6366f1;  /* Indigo background on hover */
+    transform: translateY(-10px);
+    color: white;
+}
+
+.about .stat-item:nth-child(4):hover i {
+    color: white;
+}
+
+/* Optional: Add a light indigo background before hover */
+.about .stat-item:nth-child(4) {
+    background: rgba(99, 102, 241, 0.1);  /* Light indigo background */
+}
+
+/* Update grid for 4 items */
+.about-stats {
+    grid-template-columns: repeat(2, 1fr);  /* Ensure 2x2 grid */
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    /* Hide hero section lottie */
+    .hero-decoration {
+        display: none !important;
+    }
+    
+    #hero-animation {
+        display: none !important;
+    }
+
+    /* Hide projects section lottie */
+    .projects .projects-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    #projects-animation {
+        display: none !important;
     }
 }
