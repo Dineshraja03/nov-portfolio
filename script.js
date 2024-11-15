@@ -167,16 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Clean up on page unload
     window.addEventListener('unload', cleanup);
 
-    // Projects Animation - Choose one of these options:
-
-    // Option 1: Project Management/Tasks
-        // lottie.loadAnimation({
-        //     container: document.getElementById('projects-animation'),
-        //     renderer: 'svg',
-        //     loop: true,
-        //     autoplay: true,
-        //     path: 'https://assets8.lottiefiles.com/packages/lf20_M9p23l.json'
-        // });
 
     // Option 2: Code Window Animation
     lottie.loadAnimation({
@@ -187,42 +177,4 @@ document.addEventListener('DOMContentLoaded', () => {
         path: 'https://assets2.lottiefiles.com/private_files/lf30_wqypnpu5.json'
     });
 
-    // // Option 3: Project Development
-    // lottie.loadAnimation({
-    //     container: document.getElementById('projects-animation'),
-    //     renderer: 'svg',
-    //     loop: true,
-    //     autoplay: true,
-    //     path: 'https://assets5.lottiefiles.com/packages/lf20_pwohahvd.json'
-    // });
-
-    // Option 4: Web Development
-    // lottie.loadAnimation({
-    //     container: document.getElementById('projects-animation'),
-    //     renderer: 'svg',
-    //     loop: true,
-    //     autoplay: true,
-    //     path: 'https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json'
-    // });
-
-    function sendWhatsAppMessage(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Format the message
-        const formattedMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-        
-        // Replace YOUR_PHONE_NUMBER with your actual phone number including country code
-        // Example: 919876543210 for +91 9876543210
-        const phoneNumber = '919150256608';
-        
-        // Create WhatsApp URL
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
-        
-        // Open WhatsApp
-        window.open(whatsappURL, '_blank');
-    }
 });

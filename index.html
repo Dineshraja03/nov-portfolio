@@ -401,5 +401,27 @@
         });
 </script>
 
+<script>
+    function sendWhatsAppMessage(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Format the message
+        const formattedMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+        
+        // Your WhatsApp number
+        const phoneNumber = '919150256608';
+        
+        // Create WhatsApp URL
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
+        
+        // Open WhatsApp
+        window.open(whatsappURL, '_blank');
+    }
+</script>
+
 </body>
 </html>
